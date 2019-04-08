@@ -1,8 +1,8 @@
 <li [ngClass]="{'list-group-item':true,'list-group-item-success': post.loveIts>0
 ,'list-group-item-danger': post.loveIts<0}" [ngStyle]="{color:getColor()}">
   <div>
-    <div>{{post.createdAt | date}}</div>
-    <h2> {{post.title}} </h2>
+    <h3 [ngStyle]="{textAlign:'left',color:'grey',paddingLeft:'70%',marginBottom:'0px',marginTop:'0px', fontStyle:'italic'}">{{getDate() | date:'medium'}}</h3>
+    <h2 [ngStyle]="{marginTop:'0px'}" >{{post.title}}  </h2>
 <p>
   {{post.content}}
 </p>

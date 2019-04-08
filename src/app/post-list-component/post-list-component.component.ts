@@ -42,4 +42,7 @@ export class PostListComponentComponent implements OnInit {
       return 'green';
            }
   }
+
+  /*Normal j'ai pas besoin de cette fontion mais sur les champs createdAt toute le temps c'est nul ... du coup j'ai mis en dur */
+  getDate() {return new Date(); }
 }
